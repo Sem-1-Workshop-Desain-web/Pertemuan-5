@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Menentukan karakter encoding untuk halaman -->
+    <meta charset="UTF-8" />
+    <!-- Menyeting viewport untuk tampilan responsif di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Mengimpor Bootstrap CSS untuk elemen UI responsif -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    
+    <!-- Mengimpor Bootstrap JS untuk interaktivitas dan elemen seperti dropdown -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- Menentukan judul halaman -->
+    <title>3124600033_Rizal Maulana Airlangga_Tugas_5</title>
+  </head>
+  <body>
+    <style>
+      /* Styling navbar agar tetap berada di atas halaman */
+      .navbar {
+        position: fixed;
+        width: 100%;
+      }
+
+      /* Efek blur pada background navbar */
+      .bg-light-blur {
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+      }
+
+      /* Mengatur ukuran logo */
+      #logo-PENS {
+        width: 60px;
+      }
+
+      /* Efek hover pada logo */
+      #logo-PENS:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+
+      /* Efek hover pada link navbar */
+      .nav-link:hover{
+        background-color: aliceblue;
+        transition: 0.3s;
+      }
+
+      /* Ukuran gambar karakter */
+      .hero {
+        width: 380px;
+        height: 220px;
+      }
+
+      /* Menghilangkan garis bawah pada link */
+      a {
+        text-decoration: none;
+      }
+
+      /* Menyeting warna judul karakter */
+      .judulhero {
+        color: black;
+        text-decoration: none;
+      }
+
+      /* Background halaman */
+      body {
+        background-color: aliceblue;
+      }
+
+      /* Menyesuaikan layout pada layar kecil (mobile) */
+      @media (max-width: 768px) {
+        .col-12 {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      /* Mengatur navbar collapse untuk tampilan responsif */
+      .navbar-collapse {
+        display: flex;
+        justify-content: end;
+      }
+
+      /* Memberikan jarak di atas halaman untuk menghindari tumpang tindih dengan navbar */
+      #isi{
+        padding-top: 100px;
+      }
+    </style>
+
+    <!-- Navbar bagian atas dengan efek blur -->
+    <nav class="navbar navbar-expand-lg bg-light-blur py-2 px-4">
+      <div class="container-fluid">
+        <!-- Logo PENS -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-PENS.png" alt="logo-PENS" id="logo-PENS" />
+        </a>
+        <!-- Tombol untuk tampilan responsif -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu navigasi dalam tampilan responsif -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active rounded-pill px-4 py-2" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link rounded-pill px-4 py-2" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link rounded-pill px-4 py-2" href="#">Pages</a>
+            </li>
+            <li class="nav-itemn">
+              <a class="nav-link rounded-pill px-4 py-2" href="#">Portofolio</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link rounded-pill px-4 py-2">Blog</a>
+            </li>
+            <li class="nav-itemn">
+              <a class="nav-link rounded-pill px-4 py-2" href="#">Shop</a>
+            </li>
+            <li class="nav-itemn">
+              <a class="nav-link rounded-pill px-4 py-2" href="#">Shortcodes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Konten utama -->
+    <div class="container" id="isi">
+      <!-- Judul Pilih Karakter -->
+      <div class="d-flex justify-content-center mb-2">
+        <h3>PILIH KARAKTERMU!</h3>
+      </div>
+
+      <!-- Gambar karakter dan informasi -->
+      <div class="karakter">
+        <div class="row">
+          <!-- Kolom untuk masing-masing karakter -->
+          <div class="col-12 col-md-6 col-lg-4 p-0">
+            <div class="kotakdalam">
+              <!-- Gambar dan link untuk karakter -->
+              <a href="https://www.mobilelegends.com/hero/detail?channelid=2678756&heroid=20">
+                <img
+                  src="https://th.bing.com/th/id/OIP.QI7MPrX9LFWkf-GwlVij-gHaEK?rs=1&pid=ImgDetMain"
+                  alt="hero"
+                  class="hero"
+                />
+              </a>
+              <div class="my-2 mx-4">
+                <a href="https://www.mobilelegends.com/hero/detail?channelid=2678756&heroid=20" class="judulhero fw-bold fs-4">LOLITA</a>
+                <p class="mb-5">Winrate: 57.09% | Ban Rate: 2.97%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-0">
+            <div class="kotakdalam">
+              <a
+                href="https://www.mobilelegends.com/hero/detail?channelid=2678766&heroid=30"
+              >
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2sUiYfRNCKlDH0Wsdb7NfOqUAbSIuQn-94-Ou-U2DFKbByj53PJvB98NzZWnhgZulQUKBV6GkOuvuoOCHbgfeL3NzBN_SXTYcwqgl8VydxL_z7dfnF0c2zBVveZrO_zBXevlXEEBt8r3kYaYVZXSh6t9Yt5wFfeICfgGV8WkhKJ4KN-o_JvfyAAnHHQ/s2160/yi-sun-shin-fleet-warden-epic-skin-wallpaper-hd.jpg"
+                  alt="hero"
+                  class="hero"
+                />
+              </a>
+              <div class="my-2 mx-4">
+                <a
+                  href="https://www.mobilelegends.com/hero/detail?channelid=2678766&heroid=30"
+                  class="judulhero fw-bold fs-4"
+                  >Yi Sun-Shin
+                </a>
+                <p class="mb-5">Winrate: 56.25% | Ban Rate: 0.17%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-0">
+            <div class="kotakdalam">
+              <a
+                href="https://www.mobilelegends.com/hero/detail?channelid=2678781&heroid=45"
+              >
+                <img
+                  src="https://1.bp.blogspot.com/-ujKY3nrazXA/Xt5fdQHDiQI/AAAAAAAAC7c/gVzZIkU9XPEp5S1gY_IXcWRDSgjHW9a0gCLcBGAsYHQ/s1600/Wallpaper-Argus-Catastrope-Skin-Mobile-Legends-HD-for-PC-Hobigame.jpg"
+                  alt="hero"
+                  class="hero"
+                />
+                <div class="my-2 mx-4">
+                  <a
+                    href="https://www.mobilelegends.com/hero/detail?channelid=2678781&heroid=45"
+                    class="judulhero fw-bold fs-4"
+                    >ARGUS
+                  </a>
+                  <p class="mb-5">Winrate: 56.11% | Ban Rate: 1.81%</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-0">
+            <div class="kotakdalam">
+              <a
+                href="https://m.mobilelegends.com/hero/detail?channelid=2678747&heroid=11"
+                ><img
+                  src="https://th.bing.com/th/id/OIP.vxwBSVw_Dn_8PLGOd4BMiAHaEK?rs=1&pid=ImgDetMain"
+                  alt="hero"
+                  class="hero"
+              /></a>
+              <div class="my-2 mx-4">
+                <a href="" class="judulhero fw-bold fs-4">Bane</a>
+                <p class="mb-5">Winrate: 55.38% | Ban Rate: 0.48%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-0">
+            <div class="kotakdalam">
+              <a
+                href="https://m.mobilelegends.com/hero/detail?channelid=2678830&heroid=94"
+                ><img
+                  src="https://oneesports.azureedge.net/cdn-data/sites/2/2021/05/MLBB_PopolandKupa.jpg"
+                  alt="hero"
+                  class="hero"
+              /></a>
+              <div class="my-2 mx-4">
+                <a
+                  href="https://m.mobilelegends.com/hero/detail?channelid=2678830&heroid=94"
+                  class="judulhero fw-bold fs-4"
+                  >Popol and Kupa</a
+                >
+                <p class="mb-5">Winrate: 55.13% | Ban Rate: 1.38%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-0">
+            <div class="kotakdalam">
+              <a
+                href="https://m.mobilelegends.com/hero/detail?channelid=2692209&heroid=124"
+                ><img
+                  src="https://th.bing.com/th/id/OIP.xuuw30THaivbDqYwSAPtxgHaEr?rs=1&pid=ImgDetMain"
+                  alt="hero"
+                  class="hero"
+              /></a>
+              <div class="my-2 mx-4">
+                <a
+                  href="https://m.mobilelegends.com/hero/detail?channelid=2692209&heroid=124"
+                  class="judulhero fw-bold fs-4"
+                  >Chip</a
+                >
+                <p class="mb-5">Winrate: 55.10% | Ban Rate: 12.40%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
